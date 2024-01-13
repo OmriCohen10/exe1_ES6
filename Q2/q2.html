@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXE1 - Q2</title>
+    <link rel="stylesheet" href="q2.css" />
+  </head>
+  <body>
+    <header>ES6 - Question 2 !!</header>
+    <main>
+      <form onsubmit="formSubmission(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="inputs" name="name" required />
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" class="inputs" name="color" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" class="inputs" name="age" required />
+
+        <label for="weight">Weight:</label>
+        <input
+          type="number"
+          id="weight"
+          class="inputs"
+          name="weight"
+          required
+        />
+
+        <label for="image-input">Image:</label>
+        <input
+          type="file"
+          accept="image/*"
+          id="image-input"
+          class="inputs"
+          name="image"
+          onchange="getImageFromUser()"
+          required
+        />
+
+        <button type="submit" id="create-btn">Create a Duck</button>
+        <div id="action-buttons">
+          <button type="button" id="show-btn">Show</button>
+          <button type="button" id="quack-btn">Quack</button>
+        </div>
+      </form>
+      <p id="quack"></p>
+    </main>
+
+    <script src="q2.js"></script>
+  </body>
+</html>
